@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belgian beer</title>
+    <style>
+      body {
+        background: linear-gradient(
+          87.4deg,
+          rgb(255, 241, 165) 1.9%,
+          rgb(200, 125, 76) 49.7%,
+          rgb(83, 54, 54) 100.5%
+        );
+      }
+      li {
+        font-weight: thick;
+        font-size: 18px;
+        text-align: center;
+        list-style: none;
+        display: inline;
+        margin: 10px;
+      }
+
+      h1 {
+        color: green;
+        font-size: 20px;
+        font-weight: thick;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 3px solid burlywood;
+        border-radius: 50px;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: thick;
+        color: maroon;
+        font-size: 20px;
+      }
+
+    button {
+      background: goldenrod;
+      color: black;
+      display: block;
+      margin: 0 auto;
+      padding: 30px, 40px;
+       border-radius: 50px;
+        box-shadow: 8px 5px 3px #FFF;
+        transition: all 200ms ease-in-out;
+
+      
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Belgian beer</h1>
+    <p> <span class = "description"> Belgian beers are known for their variety and taste.<br>
+      
+      <hr>
+
+     They range from light wheat beers to strongest quadruple beers. 
+      They are typically <strong>strong</strong>, but they are all <em>delicious!</em></span>.</p>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Dubbel" target="_blank">
+          Dubbel</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Tripel" target="_blank">
+          Tripel</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Quadrupel" target="_blank">
+          Quadrupel</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Lambic" target="_blank">
+          Lambic</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Gueuze" target="_blank">
+          Gueuze</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Wheat_beer#Witbier"
+          target="_blank"
+        >
+          Witbier</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Brown_ale" target="_blank">
+          Brown ale</a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Saison" target="_blank">
+          Saison</a
+        >
+      </li>
+    </ul>
+    <div class ="beer">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Chimay_triple.jpg/330px-Chimay_triple.jpg"
+      width="300px"
+    />
+    </div>
+    <button>
+      Buy Belgian beer
+    </button>
+    <h2>Coded by Natalia</h2>
+  </body>
+  <script>
+    function buyBeer () {
+      let name = prompt ("What is your name?")
+      let age = prompt ("How old are you?")
+    if (age >= 18) {
+      alert ("You can buy beer!")
+    } else {
+      alert ("You cannot buy beer!")
+    }
+    }
+    let buyButton = document.querySelector ("button");
+    buyButton.addEventListener ("click", buyBeer);
+
+  </script>
+</html>
